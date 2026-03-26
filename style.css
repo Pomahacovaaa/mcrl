@@ -102,3 +102,39 @@ body{
 .cont > div {
   text-align: left;
 }
+
+@media (max-width: 768px) {
+  .cont {
+    flex-direction: column;   /* stack instead of side-by-side */
+    align-items: center;      /* center everything nicely */
+    text-align: center;
+  }
+
+  .imge {
+    width: 100%;              /* make image responsive */
+    height: auto;
+  }
+
+  .cont > div {
+    text-align: center;       /* center text on mobile */
+  }
+
+  .cont h2 {
+    text-align: center;
+    font-size: 40px;          /* smaller heading */
+  }
+
+  .cont p {
+    font-size: 20px;          /* smaller text */
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    font-size: 60px;
+  }
+
+  h2 {
+    font-size: 35px;
+  }
+}

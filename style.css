@@ -1,0 +1,104 @@
+.main{
+    font-family: 'Codystar';
+    font-size: 150px;
+    font-weight: 700;
+    color: #ffefba;
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+h2{
+    font-family: 'Baloo 2';
+    font-size: 70px;
+    font-weight: 300;
+    margin-top: 0px;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    background-color: #9391bc;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 15px;
+}
+.cat{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    background-color: #827faf;
+    padding: 5px 15px;
+    margin: 5px;
+    border-radius: 15px;
+    color: #ffefba;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.cat:hover{
+    background-color: #6f6c9e;
+    color: #efdda2;
+}
+
+body{
+    background-color: #a4a2cc;
+    color: #ffefba;
+    text-align: center;
+}
+.cont {
+  display: flex;
+  align-items: flex-start; /* fix: was centering vertically */
+  gap: 20px;
+  background-color: #9391bc;
+
+  margin: 10px;
+  padding: 15px;
+
+  border-radius: 17px;
+  box-sizing: border-box;
+}
+
+.imge {
+  height: 350px;
+  width: auto;
+  border-radius: 15px;
+}
+
+/* Fix: don't let global p styles mess up layout */
+.cont p {
+  text-align: left;        /* was centered */
+  margin: 10px 0;          /* cleaner spacing */
+}
+
+/* Fix: links shouldn't behave like big centered blocks */
+.cont a {
+  display: inline-block;
+  text-align: left;
+  
+  padding: 0;
+  background: none;
+}
+
+/* Fix: your h2 was globally centered */
+.cont h2 {
+  text-align: left;
+  margin-top: 0;
+  font-family: 'Codystar';
+  font-weight: 800;
+}
+
+/* Optional cleanup: your .left class had redundant stuff */
+.left {
+  color: #ffefba;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.cont > div {
+  text-align: left;
+}
